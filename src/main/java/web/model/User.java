@@ -14,23 +14,12 @@ public class User {
     private String surname;
 
     public User(String name, String surname) {
-
         this.name = name;
         this.surname = surname;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
-    }
-
     public User() {
     }
-
 
     public Long getId() {
         return id;
@@ -54,6 +43,15 @@ public class User {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
     }
 }
 
